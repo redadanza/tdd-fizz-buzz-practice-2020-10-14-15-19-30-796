@@ -57,7 +57,7 @@ public class FizzBuzzTest {
     @Test
     public void should_return_FizzBuzz_when_count_off_given_order_number_15(){
         //given
-        int orderNum = 7;
+        int orderNum = 15;
         FizzBuzz fizzBuzz = new FizzBuzz();
 
         //when
