@@ -10,16 +10,16 @@ public class FizzBuzz {
     public static final int MODULO_7 = 7;
 
     public String countOff(int orderNumber){
-        if(isFizz(orderNumber, MODULO_3) && isBuzz(orderNumber, MODULO_5))
-        {
-            return "FizzBuzz";
+        if(isFizz(orderNumber, MODULO_3) && isBuzz(orderNumber, MODULO_5)) {
+            return FIZZ + BUZZ;
         }
-        if(isFizz(orderNumber, MODULO_3))
-        {
+        if(isFizz(orderNumber, MODULO_3) && isWhizz(orderNumber,MODULO_7)) {
+            return FIZZ + WHIZZ;
+        }
+        if(isFizz(orderNumber, MODULO_3)) {
             return  FIZZ;
         }
-        if(isBuzz(orderNumber, MODULO_5))
-        {
+        if(isBuzz(orderNumber, MODULO_5)) {
             return BUZZ;
         }
         if(isWhizz(orderNumber, MODULO_7)){
