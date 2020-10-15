@@ -16,7 +16,7 @@ public class FizzBuzzTest {
         String actual = fizzBuzz.countOff(orderNum);
 
         //then
-        assertEquals(1, actual);
+        assertEquals("1", actual);
     }
 
 }
