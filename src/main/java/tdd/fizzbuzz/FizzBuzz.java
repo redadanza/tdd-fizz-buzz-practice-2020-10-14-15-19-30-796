@@ -16,6 +16,9 @@ public class FizzBuzz {
         if(isFizz(orderNumber, MODULO_3) && isWhizz(orderNumber,MODULO_7)) {
             return FIZZ + WHIZZ;
         }
+        if(isBuzz(orderNumber, MODULO_5) && isWhizz(orderNumber,MODULO_7)) {
+            return BUZZ + WHIZZ;
+        }
         if(isFizz(orderNumber, MODULO_3)) {
             return  FIZZ;
         }
