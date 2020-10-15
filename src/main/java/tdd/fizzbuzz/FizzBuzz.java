@@ -11,12 +11,8 @@ public class FizzBuzz {
 
     public String countOff(int orderNumber){
         String answer = "";
-        if(isFizz(orderNumber, MODULO_3))
-           answer += FIZZ;
-        if(isBuzz(orderNumber, MODULO_5))
-            answer += BUZZ;
-        if(isWhizz(orderNumber, MODULO_7))
-            answer += WHIZZ;
+
+        answer = getFizzBuzzWhizz(answer, orderNumber);
         if(answer == "")
             return String.valueOf(orderNumber);
 
@@ -33,6 +29,16 @@ public class FizzBuzz {
 
     private boolean isFizz(int orderNumber, int modulo3) {
         return isBuzz(orderNumber, modulo3);
+    }
+    private String getFizzBuzzWhizz(String answer, int orderNumber) {
+        if(isFizz(orderNumber, MODULO_3))
+            answer += FIZZ;
+        if(isBuzz(orderNumber, MODULO_5))
+            answer += BUZZ;
+        if(isWhizz(orderNumber, MODULO_7))
+            answer += WHIZZ;
+
+        return answer;
     }
 
 }
