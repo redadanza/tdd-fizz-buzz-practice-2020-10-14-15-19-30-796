@@ -10,6 +10,9 @@ public class FizzBuzz {
     public static final int MODULO_7 = 7;
 
     public String countOff(int orderNumber){
+        if(isFizz(orderNumber, MODULO_3) && isBuzz(orderNumber, MODULO_5) && isWhizz(orderNumber,MODULO_7)) {
+            return FIZZ + BUZZ + WHIZZ;
+        }
         if(isFizz(orderNumber, MODULO_3) && isBuzz(orderNumber, MODULO_5)) {
             return FIZZ + BUZZ;
         }
